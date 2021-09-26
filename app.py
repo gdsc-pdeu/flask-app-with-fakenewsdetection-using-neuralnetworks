@@ -1,6 +1,5 @@
 from flask import Flask, render_template, request, jsonify
 import re
-from tensorflow import keras
 import predicting_heading,predicting_text
 
 app = Flask(__name__)
