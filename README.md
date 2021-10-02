@@ -1,4 +1,4 @@
-# flask-ibmzdatathon
+# Fake news detector using neural networks
 
 # Author
 
