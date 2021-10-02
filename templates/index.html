@@ -4,7 +4,7 @@
 <head>
 	<meta charset="utf-8">
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
-	<title>Fake News Prediction</title>
+	<title>Fake News Prediction App</title>
 	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet"
 		integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js"
@@ -17,7 +17,7 @@
 <body>
 	<nav class="navbar navbar-expand-lg navbar-light bg-light">
 		<div class="container-fluid">
-			<a class="navbar-brand" href="/">FAKE NEWS PREDICTION</a>
+			<a class="navbar-brand" href="/">FAKE NEWS PREDICTION APP</a>
 			<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup"
 				aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
@@ -25,11 +25,11 @@
 			<div class="nav navbar-nav navbar-right" id="navbarNavAltMarkup">
 				<div class="navbar-nav">
 					<a class="nav-link" target="_blank"
-						href="https://rapidapi.com/fangyiyu/api/fake-news-detection1/">API</a>
+						href="/">API</a>
 					<a class="nav-link" target="_blank"
-						href="https://medium.com/@fangyiyu/how-to-build-a-fake-news-detection-web-app-using-flask-c0cfd1d9c2d4?sk=2a752b0d87c759672664232b33543667/">Blog</a>
+						href="/">Blog</a>
 					<a class="nav-link" target="_blank"
-						href="https://github.com/fangyiyu/Fake_News_Detection_Flask/blob/main/Fake_news_detection.ipynb">NoteBook</a>
+						href="https://github.com/gdsc-pdeu/flask-app-with-fakenewsdetection-using-neuralnetworks">Source</a>
 					<a class="nav-link" target="_blank" href="https://github.com/fangyiyu/Fake_News_Detection_Flask">Code Source</a>
 				</div>
 			</div>
@@ -38,8 +38,8 @@
 
 
 	<br>
-	<p style=text-align:center>A fake news prediction web application using Machine Learning algorithms, deployed using Django and Heroku. </p>
-	<p style=text-align:center>Enter your heading and text to try it.</p>
+	<p style=text-align:center>A fake news prediction web application using Machine Learning algorithms, Neural networks and Flask, to be deployed in the future. </p>
+	<p style=text-align:center>Enter your news heading and news text to try it.</p>
 	<br>
 	<div class='container'>
 		<form action="/" method="POST">
@@ -47,6 +47,7 @@
 				<div class="form-group">
 					<textarea class="form-control jTextarea mt-3" id="jTextarea'" rows="5" name="heading"
 					 placeholder="Write your article heading here..." required>{{heading}}</textarea>
+					
 					 <textarea class="form-control jTextarea mt-3" id="jTextarea'" rows="5" name="text"
 					 placeholder="Write your article text here..." required>{{text}}</textarea>
 
