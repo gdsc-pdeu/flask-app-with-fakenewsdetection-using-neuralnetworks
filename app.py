@@ -24,7 +24,7 @@ def webapp():
     text=request.form['text']
     predicted_header =(predict_heading(heading))
     predicted_text=predict_text(text)
-    
+    prediction=f"Heading Truth: {predicted_header} and Text Truth: {predicted_text}"
     return render_template('index.html', heading=heading,text=text, result=prediction)
 @app.route('/predict/', methods=['GET','POST'])
 def api():
